@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3新增结构伪类选择器</title>
+    <style>
+        /* 选择ul里的第一个孩子小li */
+        ul li:first-child {
+            color: rgb(0, 149, 255);
+            background-color: pink;
+        }
+
+        /* 选择ul里的最后一个孩子小li */
+        ul li:last-child {
+            color: green;
+            background-color: pink;
+        }
+
+        /* 选择ul里的第二个孩子小li */
+        ul li:nth-child(2) {
+            color: red;
+            background-color: skyblue;
+        }
+
+        /* 选择ul里的第6个孩子小li */
+        ul li:nth-child(6) {
+            color: red;
+            background-color: skyblue;
+        }
+
+        /* 结构伪类选择器权重为10，这里加起来是12 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+</body>
+
+</html>

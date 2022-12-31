@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3过渡效果</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* background-color: skyblue; */
+            /* transition: 变化的属性 花费时间 运动曲线 何时开始 */
+            /* 谁做过渡给谁加 */
+            transition: width 1s ease 0s;
+            /* 多个属性可以逗号分隔，也可用all */
+            transition: width 1s ease 0s, height 1s ease 0s;
+            /* 后两项默认为ease 0s 可不写 */
+            transition: all 4s;
+        }
+
+        div:hover {
+            height: 500px;
+            width: 600px;
+        }
+
+        img:hover {
+            filter: blur(0);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            filter: blur(12px);
+            transition: filter 4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/pink.jpg" alt="">
+    </div>
+</body>
+
+</html>

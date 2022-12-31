@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3盒子模型</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 30px 0;
+            background-color: skyblue;
+            border: 20px solid red;
+            padding: 15px;
+            /* 1. box-sizing: content-box 盒子大小为 width + padding + border （以前默认的） */
+            box-sizing: content-box;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 20px solid red;
+            padding: 15px;
+            /* 2. box-sizing: border-box 盒子大小为 width */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        啦啦啦
+    </div>
+
+    <p>
+        略略略
+    </p>
+</body>
+
+</html>
